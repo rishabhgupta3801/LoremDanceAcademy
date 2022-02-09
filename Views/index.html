@@ -1,0 +1,61 @@
+extends base.pug
+
+block scripts
+script(src='/index.js')
+
+block style
+style
+include ../static/style.css
+include ../static/contactstyle.css
+block content
+<section id="introSection">
+  <div>Welcome to Lorem Dance Academy</div>
+  <div class="small">Enter cheesy tag line here</div>
+</section>
+<section id="missionsSection">
+  <h2>Our missions</h2>
+  <div class="card">
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <div class="card-box">
+      <div class="card-img"><img src="/static/img/1.png" /></div>
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, itaque provident mollitia cupiditate aliquam
+          quam nisi velit expedita. Doloribus, suscipit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <div class="card-box">
+      <div class="card-img"><img src="/static/img/2.png" /></div>
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque et rerum deleniti animi voluptas, eos
+          aliquam amet ab iusto earum!</p>
+      </div>
+    </div>
+  </div>
+  <div class="card card-3">
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <div class="card-box">
+      <div class="card-img"><img src="/static/img/3.png" /></div>
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic iste nostrum pariatur numquam ipsam
+          assumenda expedita, officiis asperiores aliquam.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sponsersSection">
+  <h1>Our Sponsers</h1>
+  <div id="sponsers"><img class="spImage" src="/static/img/linux.png" alt="" /><img class="spImage"
+      src="/static/img/apple.png" alt="" /><img class="spImage" src="/static/img/google.png" alt="" /><img
+      class="spImage" src="/static/img/instagram.jpg" alt="" /></div>
+</section>
+<div class="container" id="container">
+  <h1>Contact Us </h1>
+  <form class="myForm" action="#"> <input class="myInput" type="text" name="name" placeholder="Enter your name" /><input
+      class="myInput" type="email" name="email" placeholder="Enter your email - id" /><input class="myInput"
+      type="phone" name="phone" placeholder="Enter your phone number" /><input class="myInput" type="address"
+      name="address" placeholder="Enter your address" /><input class="myInput" type="desc" name="desc"
+      placeholder="Enter your doubts" /><button class="btn">Submit</button></form>
+</div>
