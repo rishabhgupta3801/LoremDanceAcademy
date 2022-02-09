@@ -1,0 +1,163 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 12px;
+    font-size: 1.6rem;
+    margin-right: 60px;
+}
+
+#logo img{
+    height: 50px;
+    filter: invert(1);
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar{
+    background-color: rgb(218, 56, 56);
+    padding: 7px 12px;
+    font-family: 'Comforter Brush', cursive;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+}
+
+#navbar li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+#introSection{
+    padding-bottom: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: center / cover no-repeat url("/static/Bg.jpg");
+    height: 450px;
+    background-color: red;
+    font-family: 'Lobster', cursive;
+    font-size: 58px;
+}
+
+#introSection div.small{
+    font-size: 42px;
+    padding: 6px;
+}
+
+.card-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 100px;
+    padding: 0 14px;
+}
+
+.card-img img{
+    height: inherit;
+    width: 80px;
+    margin: 0px 5px;
+}
+
+.card-content{
+    padding: 0px 14px;
+}
+
+.card-content p{
+    font-size: 15px;
+    font-family: 'Lobster', cursive;
+}
+
+#sponsersSection{
+    height: 300px;
+    background-color: rgba(245, 88, 88, 0.22);
+}
+
+#missionsSection{
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    width: 67%;
+    margin: auto;
+}
+
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 29%;
+    margin: 23px 22px;
+    height: 300px;
+    background-color: #d878781c;
+}
+
+.card h3{
+    text-align: center;
+    margin: 8px 12px;
+    margin-top: 15px;
+    font-family: 'Lobster', cursive;
+}
+#missionsSection h2{
+    padding-top: 25px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+
+#sponsersSection h1{
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+
+#sponsers{
+    height: 200px;
+    max-width: 1000px;
+    margin: 12px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.spImage{
+    height: 80%;
+    margin: 15px 60px;
+}
+
+#footer{
+    height: 40px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Lobster', cursive;
+}

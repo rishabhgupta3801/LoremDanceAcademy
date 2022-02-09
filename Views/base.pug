@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Lorem Dance Academy 2022
+    block scripts
+    block style
+
+  body
+    nav#navbar
+        ul
+            div#logo
+              img(src="/static/img/logo.png")
+              | DA2022
+            li #[a(href = "#introSection") Home]
+            li #[a(href = "#missionsSection") About]
+            li #[a(href = "#missionsSection") Services]
+            li #[a(href = "#sponsersSection") Sponsers]
+            li #[a(href = "#container") Contact Us]
+
+    block content
+    footer#footer 
+        | Copyright © LoremDanceAcademy2022.com | All rights reserved

@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title Lorem Dance Academy 2022
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+              img(src="/static/img/logo.png")
+              | DA2022
+            li #[a(href = "/") Home]
+            li #[a(href = "/") About]
+            li #[a(href = "/") Services]
+            li #[a(href = "/") Class Info]
+            li #[a(href = "/") Contact Us]
+
+    section#introSection 
+        div Welcome to Lorem Dance Academy
+        div.small Enter cheesy tag line here
+
+    section#missionsSection 
+        h2 Our missions
+        div.card
+          h3 Lorem ipsum dolor sit amet.
+          div.card-box
+              div.card-img
+                img(src="/static/img/1.png")
+              div.card-content
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, itaque provident mollitia cupiditate aliquam quam nisi velit expedita. Doloribus, suscipit.
+
+        div.card
+          h3 Lorem ipsum dolor sit amet.
+          div.card-box
+              div.card-img
+                img(src="/static/img/2.png")
+              div.card-content
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque et rerum deleniti animi voluptas, eos aliquam amet ab iusto earum!
+
+        div.card.card-3
+          h3 Lorem ipsum dolor sit amet.
+          div.card-box
+              div.card-img
+                img(src="/static/img/3.png")
+              div.card-content
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic iste nostrum pariatur numquam ipsam assumenda expedita, officiis asperiores aliquam.
+
+    section#sponsersSection 
+        h1 Our Sponsers
+        div#sponsers
+            img(src="/static/img/linux.png", alt="" class="spImage")
+            img(src="/static/img/apple.png", alt="" class="spImage")
+            img(src="/static/img/google.png", alt="" class="spImage")
+            img(src="/static/img/instagram.jpg", alt="" class="spImage")
+    
+    footer#footer 
+        | Copyright © LoremDanceAcademy2022.com
+
+    script
+      include ../static/index.js
