@@ -1,0 +1,54 @@
+extends base.pug
+
+block scripts
+  script(src='/index.js')
+
+block style
+  style
+    include ../static/style.css
+    include ../static/contactstyle.css
+block content
+  section#introSection
+    div Welcome to Lorem Dance Academy
+    .small Enter cheesy tag line here
+  section#missionSection
+      h1 Our Mission
+      div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img
+            img(src="/static/img/1.png")
+            div.card-content
+              p This is the best dance academy of the universe
+
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          iv.card-img
+            img(src="/static/img/2.png")
+            div.card-content
+              p This is the best dance academy of the universe
+
+      div.card
+        h3 Expert Teaching
+        div.card-box
+          div.card-img
+            img(src="/static/img/3.png")
+            div.card-content
+              p This is the best dance academy of the universe
+      section#sponsersSection
+        h1 Our Sponsers
+        #sponsers
+          img.spImage(src='/static/img/linux.png', alt='')
+          img.spImage(src='/static/img/apple.png', alt='')
+          img.spImage(src='/static/img/google.png', alt='')
+          img.spImage(src='/static/img/instagram.jpg', alt='')
+      #container.container
+        h1 Contact Us 
+        form.myForm(action='#')
+          input.myInput(type='text', name='name', placeholder='Enter your name')
+          input.myInput(type='email', name='email', placeholder='Enter your email - id')
+          input.myInput(type='phone', name='phone', placeholder='Enter your phone number')
+          input.myInput(type='address', name='address', placeholder='Enter your address')
+          input.myInput(type='desc', name='desc', placeholder='Enter your doubts')
+          button.btn Submit
